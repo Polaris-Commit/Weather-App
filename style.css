@@ -1,0 +1,83 @@
+/* 1. Resetting the basics: Saare default gaps ko zero kar rahe hain */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Body: Poore screen ka background set kar rahe hain aur card ko center mein laa rahe hain */
+body {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Beautiful blue gradient background */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* 3. Weather Card: Jo main div box humne banaya tha */
+.weather-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px; /* Corners ko smooth round karne ke liye */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow for a modern 3D look */
+    width: 100%;
+    max-width: 400px; /* Card ki width ko text box jitna limit rakhne ke liye */
+    text-align: center;
+}
+
+/* 4. Heading Style */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 5. Search Box Container: Input aur Button ko side-by-side rakhne ke liye */
+.search-box {
+    display: flex;
+    gap: 10px; /* Input aur Button ke beech ka gap */
+    margin-bottom: 30px;
+}
+
+/* 6. Input Field Formatting */
+#city-input {
+    flex: 1; /* Jitni bachi hui space hai, input box le lega */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* 7. Search Button Formatting */
+#search-btn {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer; /* Hover karne par hand icon dikhega */
+    font-weight: bold;
+    transition: 0.3s; /* Smooth color change on hover */
+}
+
+#search-btn:hover {
+    background-color: #0056b3; /* Darker blue when mouse hovers over it */
+}
+
+/* 8. Weather Info Display Section */
+.weather-info {
+    color: #444;
+}
+
+#temperature {
+    font-size: 48px; /* Highlighting the main temperature text */
+    font-weight: bold;
+    margin: 15px 0;
+    color: #111;
+}
+
+#description {
+    text-transform: capitalize; /* Weather description ka first letter capital karne ke liye */
+    color: #777;
+}

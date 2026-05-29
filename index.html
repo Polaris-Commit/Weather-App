@@ -1,0 +1,45 @@
+<!-- This line tells the browser that this is a modern HTML5 document -->
+<!DOCTYPE html>
+
+<!-- This starts our HTML document and sets the language to English -->
+<html lang="en">
+
+<head>
+    <!-- This ensures our website scales correctly on mobile phones and laptops -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- This is the title that appears on the browser tab -->
+    <title>Live Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container box that holds everything on our screen -->
+    <div class="weather-card">
+        
+        <!-- Our main heading -->
+        <h1>Weather App</h1>
+
+        <!-- The search container where the user types and clicks -->
+        <div class="search-box">
+            <!-- An input box where users can type text. We gave it an ID 'city-input' so our JavaScript can find it later -->
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            
+            <!-- The button the user clicks to trigger the search -->
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- This section will display the actual weather details. Right now, it's just placeholder text -->
+        <div class="weather-info">
+            <h2 id="city-name">Delhi, IN</h2>
+            <p id="temperature">28°C</p>
+            <p id="description">Clear Sky</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
