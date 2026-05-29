@@ -15,7 +15,7 @@ searchBtn.addEventListener("click", function () {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       cityName +
-      "&appid=aff6cd85feebdf36c24faefbb6960165",
+      "&appid=enterApiKey",
   )
     .then(response => {
     // Agar response sahi nahi aaya (ok nahi hai)
